@@ -14,6 +14,12 @@ Ouvre [http://127.0.0.1:8765](http://127.0.0.1:8765).
 
 ## Déploiement
 
-GitHub `atelieriter` + Netlify (publish `.`, commande `true`).
+Comme Nancy / Apo : GitHub + Netlify, zéro build.
 
-Le formulaire « contribution » utilise Netlify Forms (`name="contribution"`).
+- Repo : https://github.com/atelieriter/union-54
+- Live : https://union-54.netlify.app
+- Admin : https://app.netlify.com/projects/union-54
+
+`netlify.toml` : `publish = "."`, `command = "true"`.  
+Push sur `main` → build hook Netlify.  
+Formulaire « contribution » = Netlify Forms.
