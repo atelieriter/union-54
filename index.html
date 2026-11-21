@@ -15,7 +15,7 @@
     <a class="brand" href="#home" data-scroll>UNION&nbsp;54</a>
     <nav class="nav" aria-label="Sections">
       <a href="#projet" data-scroll>Projet</a>
-      <a href="#agora" data-scroll>Consultation</a>
+      <a href="#participer" data-scroll>Contribution</a>
       <a href="#commissions" data-scroll>Commissions</a>
       <a href="#contact" data-scroll>Contact</a>
     </nav>
@@ -64,15 +64,47 @@
           </article>
         </div>
 
-        <a class="text-link" href="#agora" data-scroll>Voir comment contribuer →</a>
+        <a class="text-link" href="#participer" data-scroll>Contribuer à l’économie du 54 →</a>
+      </div>
+    </section>
+
+    <section id="participer" class="panel panel-participer">
+      <div class="panel-inner participer-grid">
+        <div>
+          <p class="section-kicker">Contribution</p>
+          <h2>Fluidifions l’économie du 54</h2>
+          <p class="lede lede-tight">Une contribution, c’est ce que vous voyez sur le terrain : un frein, une piste, une façon de rendre l’économie meurthe-et-mosellane plus fluide — foncier, recrutement, financement, commerce, formation, export…</p>
+          <p class="lede">Vous ne déposez pas une idée abstraite : vous nourrissez le travail des commissions avec ce qui bloque ou accélère vraiment votre entreprise.</p>
+          <ol class="circuit">
+            <li>Vous déposez votre contribution</li>
+            <li>Nous la regroupons par sujet</li>
+            <li>Les commissions la traitent, vous êtes tenu au courant</li>
+          </ol>
+        </div>
+
+        <form class="idea-form" id="idea-form" name="contribution" method="POST" netlify netlify-honeypot="bot-field" action="/">
+          <p class="visually-hidden" aria-hidden="true">
+            <label>Ne pas remplir <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+          <input type="hidden" name="form-name" value="contribution" />
+          <label>
+            Votre contribution
+            <textarea name="proposition" rows="5" required placeholder="Ex. : « Impossible de trouver un local artisanal à Lunéville en moins de 18 mois » ou « Mutualiser un V.I.E entre trois PME du Val de Lorraine »…"></textarea>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="vous@entreprise.fr" autocomplete="email" />
+          </label>
+          <button type="submit" class="btn btn-navy">Envoyer</button>
+        </form>
       </div>
     </section>
 
     <section id="agora" class="panel panel-agora">
       <div class="panel-inner">
-        <p class="section-kicker">Consultation</p>
+        <p class="section-kicker">Agora</p>
         <h2>Agora entrepreneuriale</h2>
-        <p class="lede lede-strong">Les contributions de chacun alimentent notre vision commune. Tous les entrepreneurs de Meurthe-et-Moselle sont invités à y participer.</p>
+        <p class="lede lede-strong">Les contributions se regroupent ici. Une vision commune se construit au fil des remontées du terrain.</p>
 
         <div class="agora-map-wrap" id="map-wrap" aria-label="Infographie live des contributions">
           <div class="agora-map" id="agora-map">
@@ -166,38 +198,7 @@
           </div>
         </div>
 
-        <a class="btn btn-navy" href="#participer" data-scroll>Participer</a>
-      </div>
-    </section>
-
-    <section id="participer" class="panel panel-participer">
-      <div class="panel-inner participer-grid">
-        <div>
-          <p class="section-kicker">Participer</p>
-          <h2>Ajoutez votre contribution</h2>
-          <p class="lede">Une idée, un blocage, une piste. Elle rejoint la carte et le travail des commissions.</p>
-          <ol class="circuit">
-            <li>Vous déposez</li>
-            <li>Nous regroupons par sujet</li>
-            <li>Les commissions traitent, vous êtes tenu au courant</li>
-          </ol>
-        </div>
-
-        <form class="idea-form" id="idea-form" name="contribution" method="POST" netlify netlify-honeypot="bot-field" action="/">
-          <p class="visually-hidden" aria-hidden="true">
-            <label>Ne pas remplir <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
-          </p>
-          <input type="hidden" name="form-name" value="contribution" />
-          <label>
-            Votre proposition
-            <textarea name="proposition" rows="5" required placeholder="Ce qui bloquerait ou avancerait pour votre entreprise…"></textarea>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required placeholder="vous@entreprise.fr" autocomplete="email" />
-          </label>
-          <button type="submit" class="btn btn-navy">Envoyer</button>
-        </form>
+        <a class="btn btn-navy" href="#participer" data-scroll>Déposer une contribution</a>
       </div>
     </section>
 

@@ -281,6 +281,10 @@ h3 {
   margin-bottom: 1.75rem;
 }
 
+.lede-tight {
+  margin-bottom: 1rem;
+}
+
 /* ——— Projet ——— */
 .panel-projet {
   background: var(--paper);
